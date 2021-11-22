@@ -1,0 +1,55 @@
+﻿@model PagedList.IPagedList<DoAnWeb.Models.SANPHAM>
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Kết Quả Tìm Kiếm";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div id="page-content" class="single-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="breadcrumb">
+                    <li>@Html.ActionLink("Trang Chủ", "TrangChu", "TrangChu")</li>
+                    <li>@Html.ActionLink("Sản Phẩm", "CuaHang", "CuaHang")</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div id="main-content" class="col-md-12">
+                <div class="row">
+                    <p style="color:red;text-align:center;font-weight:bold;">@ViewBag.ThongBao</p>
+                    <div class="products">
+                        @foreach (var item in Model)
+                        {
+
+                            <div class="col-lg-4 col-md-4 col-xs-12">
+                                <div class="product">
+                                    <div class="image"><a href="@Url.Action("ChiTietSanPham", "SanPham", new { maSP = @item.MaSP })"><img src="~/Images/sanpham/@item.HinhAnh" style="width:300px;height:350px;" /></a></div>
+                                    <div class="buttons">
+                                        <a class="btn cart" href="@Url.Action("ThemGioHang", "GioHang", new { @maSP = @item.MaSP, @soLuong = 1, @strURL = Request.Url.ToString() })"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                        <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                                        <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="name"><h3><a href="@Url.Action("ChiTietSanPham", "SanPham", new { maSP = @item.MaSP })">@item.TenSP</a></h3></div>
+                                        <div class="price" style="font-size:18px;"><del>@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", item.GiaCu)</del></div>
+                                        <div class="price">@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", item.GiaBan)</div>
+                                        <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="text-center">
+                    <ul class="pagination">
+                        @Html.PagedListPager(Model, page => Url.Action("KetQuaTimKiem", new { page = page, @timkiem = ViewBag.Key }))
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DoAnWeb.Models.LOAISANPHAM>
+
+@{
+    ViewBag.Title = "Quản Lý Sản Phẩm";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #808080;
+        color: white;
+    }
+
+    th {
+        background-color: #2a9fd6;
+        color: white;
+    }
+</style>
+<h3>Quản Lý Loại Sản Phẩm</h3>
+<table>
+    <tr>
+        <th>Mã Loại Sản Phẩm</th>
+        <th>Tên Loại Sản Phẩm</th>
+        <th colspan="2">
+            <a href="@Url.Action("Them", "LoaiSanPhamAdmin")"><img src="~/Asset/images/AddNSX.png" /><span style="color:green;">Thêm mới</span></a>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MaLoai</td>
+            <td>@item.TenLoaiSP</td>
+            <td><a href="@Url.Action("Sua", "LoaiSanPhamAdmin", new { maLoai = @item.MaLoai })"> <img src="~/Asset/images/edit.png" /></a> </td>
+            <td><a href="@Url.Action("Xoa", "LoaiSanPhamAdmin", new { maLoai = @item.MaLoai })"> <img src="~/Asset/images/Delete.png" /></a> </td>
+        </tr>
+    }
+</table>

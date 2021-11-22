@@ -1,0 +1,81 @@
+﻿@model IEnumerable<DoAnWeb.Models.GioHang>
+
+@{
+    ViewBag.Title = "Giỏ Hàng";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div id="page-content" class="single-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="breadcrumb">
+                    <li>@Html.ActionLink("Trang Chủ", "TrangChu", "TrangChu")</li>
+                    <li>@Html.ActionLink("Giỏ Hàng", "GioHang", "GioHang")</li>
+                </ul>
+            </div>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="product well">
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="~/Images/sanpham/@item.sHinhAnh" style="width:200px;height:300px;" />
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="caption">
+                            @using (Html.BeginForm("CapNhat", "GioHang", FormMethod.Post))
+                            {
+                                <input type="hidden" name="maSP" value="@item.sMaSP" />
+                                <input type="hidden" name="tensanpham" value="@item.sTenSP" />
+                                <input type="hidden" name="gia" value="@item.dGiaBan" />
+                                <div class="name"><h3><a href="product.html">@item.sTenSP</a></h3></div>
+                                <div class="price">@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", @item.dGiaBan)</div>
+                                <label>Số lượng : </label> <input class="form-inline quantity" min="1" max="1000" type="number" value="@item.iSoLuong" name="soLuong"><input type="submit" class="btn btn-2 " value="Cập Nhật" /> <br />
+                                <span>Tổng Tiền : @item.dThanhTien</span>
+                                <hr>
+                            }
+                            <a href="@Url.Action("Xoa", "GioHang", new { maSP = item.sMaSP })" class="btn btn-default pull-right">XÓA BỎ</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+        }
+
+
+        @*Quay về trang sản phẩm*@
+        <div class="row">
+            <div class="col-md-4 col-md-offset-8 ">
+                <center><a href="@Url.Action("TrangChu", "TrangChu")" class="btn btn-1">TIẾP TỤC MUA SẮM</a></center>
+            </div>
+        </div>
+        @*Tính tiền*@
+        <div class="row">
+            <div class="pricedetails">
+                <div class="col-md-4 col-md-offset-8">
+                    <table>
+                        <h6>Tính tiền : </h6>
+                        <tr>
+                            <td>Tổng</td>
+                            <td>@ViewBag.TongThanhTien</td>
+                        </tr>
+
+                        <tr>
+                            <td>Giảm giá : </td>
+                            <td>0</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #333">
+                            <td><h5>THÀNH TIỀN</h5></td>
+                            <td>@ViewBag.TongThanhTien</td>
+                        </tr>
+                    </table>
+                    <center><a href="@Url.Action("DonHang","DonHang")" class="btn btn-1">ĐẶT HÀNG</a></center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

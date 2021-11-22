@@ -1,0 +1,123 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by 365Bootstrap dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="http://www.365bootstrap.com">
+
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/Asset/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Asset/css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="fonts/font-slider.css" type="text/css">
+    <script src="~/Asset/js/jquery-2.1.1.js"></script>
+    <script src="~/Asset/js/bootstrap.min.js"></script>
+    <script src="~/Areas/AssetAdmin/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <nav id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div id="logo">
+                        <img src="~/Images/logo.png" />
+                    </div>
+                </div>
+                <div class="col-xs-5"> 
+                    <form class="form-search" action="~/TimKiem/KetQuaTimKiem">
+                        <input type="text" style="width:300px;" class="input-medium search-query" name="timkiem" placeholder="Nhập tên sản phẩm">
+                        <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="top-link">
+                        @Html.Action("TaiKhoanPartial", "TaiKhoan")
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="menu" class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <span id="heading" class="visible-xs">Categories</span>
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Trang Chủ", "TrangChu", "TrangChu")</li>
+                    @*<li>@Html.ActionLink("Sản Phẩm", "CuaHang", "CuaHang")</li>*@
+                    <li class="dropdown">
+                        @Html.ActionLink("Sản Phẩm", "CuaHang", "CuaHang")
+                        <div class="dropdown-menu">
+                            <div class="dropdown-inner">
+                                <ul>
+                                    <li>@Html.ActionLink("Sản Phẩm Áo", "CuaHangAo", "CuaHang")</li>
+                                    <li>@Html.ActionLink("Sản Phẩm Quần", "CuaHangQuan", "CuaHang")</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    
+    @RenderBody()
+
+    <footer>
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="row">
+                    <div class="col-md-3 col-footer footer-1">
+                        <img src="~/Images/footer-logo.png" />
+                        <p>Chúng tôi cam đoan nếu hàng không như ảnh.Chúng tôi sẽ hoàn trả tiền 100%</p>
+                    </div>
+                    <div class="col-md-3 col-footer footer-2">
+                        <div class="heading"><h4>Dịch Vụ Khách Hàng</h4></div>
+                        <ul>
+                            <li><a href="#">Về Chúng Tôi</a></li>
+                            <li><a href="#">Thông Tin Giao Hàng</a></li>
+                            <li><a href="#">Chính Sách Bảo Mật</a></li>
+                            <li><a href="#">Điều Khoản & Điều Kiện</a></li>
+                            <li><a href="#">Liên Hệ Chúng Tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-3">
+                        <div class="heading"><h4>Tài Khoản Của Tôi</h4></div>
+                        <ul>
+                            <li><a href="#">Tải Khoản</a></li>
+                            <li><a href="#">Nhãn Hiệu</a></li>
+                            <li><a href="#">Phiếu Quà Tặng</a></li>
+                            <li><a href="#">Đặt Biệt</a></li>
+                            <li>@Html.ActionLink("Đi Đến Trang Admin", "HomeAdmin", "Admin")</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-4">
+                        <div class="heading"><h4>Liên Hệ Chúng tôi</h4></div>
+                        <ul>
+                            <li><span class="glyphicon glyphicon-home"></span>Quận 12, TP Hồ Chí Minh</li>
+                            <li><span class="glyphicon glyphicon-earphone"></span>0987654321</li>
+                            <li><span class="glyphicon glyphicon-envelope"></span>lamchikhang.it@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

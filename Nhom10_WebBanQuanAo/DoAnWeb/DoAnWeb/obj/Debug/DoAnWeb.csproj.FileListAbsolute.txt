@@ -1,0 +1,98 @@
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\DoAnWeb.dll.config
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\DoAnWeb.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\DoAnWeb.pdb
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\Newtonsoft.Json.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Net.Http.Formatting.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Helpers.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.WebHost.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Mvc.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Razor.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\Newtonsoft.Json.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Net.Http.Formatting.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Helpers.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.WebHost.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Mvc.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Razor.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.pdb
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.csprojResolveAssemblyReference.cache
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.Mvc.dll
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.xml
+C:\Users\khanglam\Downloads\Công Nghệ Web\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.Mvc.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\DoAnWeb.dll.config
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\DoAnWeb.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\DoAnWeb.pdb
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\Newtonsoft.Json.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.Mvc.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Net.Http.Formatting.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Helpers.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.WebHost.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Mvc.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Razor.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\PagedList.Mvc.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\Newtonsoft.Json.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Net.Http.Formatting.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Helpers.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Http.WebHost.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Mvc.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.Razor.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.csproj.AssemblyReference.cache
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.csproj.CoreCompileInputs.cache
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.dll
+C:\Users\ThanhLong\Desktop\DoAn\DoAn\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.pdb
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\DoAnWeb.dll.config
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\DoAnWeb.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\DoAnWeb.pdb
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\Newtonsoft.Json.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\PagedList.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\PagedList.Mvc.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Net.Http.Formatting.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Helpers.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Http.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Http.WebHost.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Mvc.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Razor.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\PagedList.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\PagedList.Mvc.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\Newtonsoft.Json.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Net.Http.Formatting.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Helpers.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Http.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Http.WebHost.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Mvc.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.Razor.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.csproj.AssemblyReference.cache
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.csproj.CoreCompileInputs.cache
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.dll
+C:\Users\ThanhLong\Desktop\Nhom10_WebBanQuanAo\DoAnWeb\DoAnWeb\obj\Debug\DoAnWeb.pdb

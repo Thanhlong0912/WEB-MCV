@@ -1,0 +1,29 @@
+﻿@model IEnumerable<DoAnWeb.Models.SANPHAM>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="heading"><h2>SẢN PHẨM MỚI</h2></div>
+        <div class="products">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product">
+                        <div class="image"><a href="@Url.Action("ChiTietSanPham", "SanPham", new { maSP = @item.MaSP })"><img src="~/Images/sanpham/@item.HinhAnh" style="width:200px;height:300px;" /></a></div>
+                        <div class="buttons">
+                            <a class="btn cart" href="@Url.Action("ThemGioHang", "GioHang", new { @maSP = @item.MaSP, @soLuong = 1, @strURL = Request.Url.ToString() })"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                        </div>
+                        <div class="caption">
+                            <div class="name"><h3><a href="@Url.Action("ChiTietSanPham", "SanPham", new { maSP = @item.MaSP })">@item.TenSP</a></h3></div>
+                            <div class="price" style="font-size:18px;"><del>@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", item.GiaCu)</del></div>
+                            <div class="price">@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", item.GiaBan)</div>
+                            <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

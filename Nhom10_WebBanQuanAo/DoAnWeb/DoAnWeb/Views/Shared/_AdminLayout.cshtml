@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Asset/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Asset/css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="fonts/font-slider.css" type="text/css">
+    <script src="~/Asset/js/jquery-2.1.1.js"></script>
+    <script src="~/Asset/js/bootstrap.min.js"></script>
+    <script src="~/Areas/AssetAdmin/ckeditor/ckeditor.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Trang Admin</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul id="active" class="nav navbar-nav side-nav">
+                    <li><a href="@Url.Action("TrangChu", "TrangChu")"><i class="fa fa-globe"></i> Quay Về Trang Khách</a></li>
+                    <li><a href="@Url.Action("QLLoaiSanPham", "LoaiSanPhamAdmin")"><i class="fa fa-globe"></i> Quản lý Loại sản phẩm</a></li>
+                    <li><a href="@Url.Action("SanPhamAdmin", "SanPhamAdmin")"><i class="fa fa-list-ol"></i> Quản lý Sản phẩm</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                    @Html.Action("TaiKhoanAdminPartial", "Admin")
+                    <li class="divider-vertical"></li>
+                    <li></li>
+                </ul>
+            </div>
+        </nav>
+        @RenderBody()
+    </div>
+    
+</body>
+</html>

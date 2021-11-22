@@ -1,0 +1,81 @@
+﻿@model PagedList.IPagedList<DoAnWeb.Models.SANPHAM>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản Lý Sản Phẩm";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 70%;
+        margin: auto;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #5d5e63;
+        color:white;
+    }
+
+    th {
+        background-color: #2a9fd6;
+        color: white;
+    }
+</style>
+
+<h2>Quản Lý Sản Phẩm</h2>
+@Html.PagedListPager(Model, page => Url.Action("SanPhamAdmin", new { page }))
+
+<table>
+    <tr>
+        <th>Mã Sản Phẩm</th>
+        <th>Tên Sản Phâm</th>
+        <th>Giá Bán</th>
+        <th>Hình Ảnh</th>
+        <th>Mã Loại</th>
+        <th colspan="2">
+            <a href="@Url.Action("Them","SanPhamAdmin")" style="text-decoration: none "><img src="~/Asset/images/AddNSX.png" /><span style="color:green;">Thêm mới</span> </a>
+        </th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.MaSP</td>
+            <td>@item.TenSP</td>
+            <td>@item.GiaBan</td>
+            <td><img src="~/Images/sanpham/@item.HinhAnh" style="width:50px;height:70px;" /></td>
+            <td>@item.MaLoai</td>
+            <td><a href="@Url.Action("Sua","SanPhamAdmin",new { maSP = @item.MaSP})"> <img src="~/Asset/images/edit.png" /></a> </td>
+            <td><a href="@Url.Action("Xoa","SanPhamAdmin",new { maSP = @item.MaSP})"> <img src="~/Asset/images/Delete.png" /></a> </td>
+        </tr>
+    }
+
+</table>
+<div class="modal fade" id="imagesManange" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Quản Lý Ảnh</h4>
+            </div>
+            <div class="modal-body">
+                <div id="imageList">
+                </div>
+                <div class="clear"></div>
+                <input type="button" id="btnChooImages" class="btn btn-primary" value="Chọn ảnh" />
+                <input type="hidden" id="hidProductID" value="0" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnSaveImages">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+

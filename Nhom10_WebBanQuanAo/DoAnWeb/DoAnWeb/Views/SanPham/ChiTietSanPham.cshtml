@@ -1,0 +1,62 @@
+﻿@model DoAnWeb.Models.SANPHAM
+
+@{
+    ViewBag.Title = "Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div id="page-content" class="single-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="breadcrumb">
+                    <li>@Html.ActionLink("Trang Chủ", "TrangChu", "TrangChu")</li>
+                    <li>@Html.ActionLink("Sản Phẩm", "Index", "Shop")</li>
+                    <li>@Model.TenSP</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="product">
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img src="~/Images/sanpham/@Model.HinhAnh" style="width:300px;height:350px;" />
+                            <div class="buttons">
+                                <a class="btn cart" href="@Url.Action("ThemGioHang", "GioHang", new { @maSP = Model.MaSP, @soLuong = 1, @strURL = Request.Url.ToString() })"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                                <a class="btn wishlist" href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                                <a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="caption">
+                            <div class="name"><h3>@Model.TenSP</h3></div>
+                            <div class="price" style="font-size:18px;"><del>@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", Model.GiaCu)</del></div>
+                            <div class="price"> @String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", Model.GiaBan)</div>
+                            @Html.Raw(HttpUtility.HtmlDecode(Model.MoTa))
+                            <div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+
+                            @using (Html.BeginForm("ThemGioHang", "GioHang", FormMethod.Post))
+                            {
+                                <input type="hidden" name="maSP" value="@Model.MaSP" />
+                                <input type="hidden" name="strURL" value="@Request.Url.ToString()" />
+                                <label>Số Lượng: </label> <input class="form-inline quantity" type="number" value="1" min="1" max="1000" name="soLuong" />
+                                <input type="submit" class="btn btn-2 " value="Thêm vào giỏ">
+                            }
+
+                        </div>
+                    </div>
+                    <div class="clear" style="height:10%;"></div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    @Html.Action("Top4GiaRe", "SanPham")
+</div>

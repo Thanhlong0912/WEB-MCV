@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Đăng Ký";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@model DoAnWeb.Models.User
+
+@using (Html.BeginForm("DangKy", "TaiKhoan", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Tạo Tài Khoản</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        <label class="col-md-2 control-label">Tên Đăng Nhập</label>
+        <div class="col-md-6">
+            @Html.TextBoxFor(model => model.TenDangNhap, new { @class = "form-control" })
+            <p style="color:red;">@ViewBag.TrungTenDangNhap</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Mật Khẩu</label>
+        <div class="col-md-6">
+            @Html.PasswordFor(model => model.MatKhau, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Họ Tên</label>
+        <div class="col-md-6">
+            @Html.TextBoxFor(model => model.HoTen, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Email</label>
+        <div class="col-md-6">
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+            <p style="color:red;">@ViewBag.TrungEmail</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Số Điện Thoại</label>
+        <div class="col-md-6">
+            @Html.TextBoxFor(model => model.SDT, new { @class = "form-control" })
+            <p style="color:red;">@ViewBag.TrungSDT</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Địa Chỉ</label>
+        <div class="col-md-6">
+            @Html.TextBoxFor(model => model.DiaChi, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Giới Tính</label>
+        <div class="col-md-6">
+            <label class="control-label">Nam</label>
+            @Html.RadioButtonFor(model => model.GioiTinh,"Nam") &ensp; &ensp;
+            <label class="control-label">Nữ</label>
+            @Html.RadioButtonFor(model => model.GioiTinh,"Nữ")
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-4 col-md-6">
+            <input type="submit" width="40" class="btn btn-default" value="ĐĂNG KÝ" />
+        </div>
+    </div>
+}

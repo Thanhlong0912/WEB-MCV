@@ -1,0 +1,11 @@
+﻿@if (Session["TaiKhoan"] == null)
+{
+    <li>@Html.ActionLink("Đăng Ký", "DangKy", "TaiKhoan")</li>
+    <li>@Html.ActionLink("Đăng Nhập", "DangNhap", "TaiKhoan")</li>
+}
+else
+{
+    @Html.Action("GioHangPartial", "GioHang")
+    <li>@Html.ActionLink("Xin chào, " + Session["TaiKhoan"].ToString(), "ThongTinTaiKhoan", "TaiKhoan")</li>
+    <li>@Html.ActionLink("Đăng Xuất", "DangXuat", "TaiKhoan")</li>
+}
